@@ -4,12 +4,24 @@ STC8H和STC8G的通用模版，里面使用T0做了Tick功能，串口已经初�
 # 编辑日期：20260203
 
 # 文件说明：
-   1、工程文件：RVMDK
-   2、程序源代码文件：User
-   3、官方硬设函数库：Driver
-   3、量产烧录文件：RVMDK\Objects\STC8G-H-LIB.hex
-   4、程序功能要求：功能说明.png
-   5、烧录设置：烧录设置.png
+│  keilclean.bat -> 清除临时文件脚本
+│  
+├─Driver -> 官方硬设函数库
+│  │  UPDATE-NOTE.txt -> 更新说明
+│  ├─inc -> 头文件
+│  ├─isr -> 中断函数
+│  └─src -> 函数原型
+│          
+├─RVMDK -> 项目工程文件
+│  │  STARTUP.A51
+│  │  STC8G-H-LIB.uvproj
+│  ├─Listings
+│  └─Objects
+│          STC8G-H-LIB.hex -> 量产烧录文件
+│          stc_tool_config.cfg -> STC烧录软件配置文件
+│          stc_tool_config使用说明.png -> STC烧录软件配置文件使用说明
+│          
+└─User -> 程序源代码文件
 
 # 芯片不同工况的电流情况
    1、使用全浮空输入时，端口输入模拟信号，待机电流会增高
