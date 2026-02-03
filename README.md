@@ -1,0 +1,2 @@
+# stc8h8g_lib_template
+STC8H和STC8G的通用模版，里面使用T0做了Tick功能，串口已经初始化配置并能使用printf打印数据
